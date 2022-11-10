@@ -12,36 +12,36 @@ struct ContentView: View {
         NavigationView{
             VStack(alignment: .leading){
                 HStack{
-                    Text("Fetch JsonApi - 1")
+                    Text("https://jsonplaceholder.typicode.com/todos")
                         .bold()
                         .foregroundColor(Color.blue)
                     Spacer()
-                   NavigationLink(destination: ApiView(), label: {
-                       Text("Fetch")
-                           .bold()
-                           .frame(width:100, height:35)
-                           .background(Color.blue)
-                           .foregroundColor(.white)
-                           .cornerRadius(10)
-                   })
+                    NavigationLink(destination: FirstApiView(), label: {
+                        Text("Fetch")
+                            .bold()
+                            .frame(width:100, height:35)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    })
                 }
-//                HStack{
-//                    Text("Fetch JsonApi - 2")
-//                        .bold()
-//                        .foregroundColor(Color.blue)
-//                    Spacer()
-//                   NavigationLink(destination: AppiView(), label: {
-//                       Text("Fetch")
-//                           .bold()
-//                           .frame(width:100, height:35)
-//                           .background(Color.blue)
-//                           .foregroundColor(.white)
-//                           .cornerRadius(10)
-//                   })
-//                }
-            }.padding()
+                //                HStack{
+                //                    Text("Fetch JsonApi - 2")
+                //                        .bold()
+                //                        .foregroundColor(Color.blue)
+                //                    Spacer()
+                //                   NavigationLink(destination: AppiView(), label: {
+                //                       Text("Fetch")
+                //                           .bold()
+                //                           .frame(width:100, height:35)
+                //                           .background(Color.blue)
+                //                           .foregroundColor(.white)
+                //                           .cornerRadius(10)
+                //                   })
+                //                }
+               }.padding()
                 .navigationTitle("Api Calling")
-                
+            }
         }
 }
 
