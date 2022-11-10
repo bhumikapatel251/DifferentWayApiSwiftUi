@@ -30,7 +30,7 @@ struct ContentView: View {
                                         .bold()
                                         .foregroundColor(Color.blue)
                                     Spacer()
-                                   NavigationLink(destination: AppiView(), label: {
+                                   NavigationLink(destination: QuoteApiView(), label: {
                                        Text("Fetch")
                                            .bold()
                                            .frame(width:100, height:35)

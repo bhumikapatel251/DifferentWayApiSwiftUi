@@ -34,6 +34,30 @@ struct QuoteApiView: View {
             }
         }
     }
+    func fetchData() async{
+        // create url
+        
+        guard let url = URL(string: "https://www.breakingbadapi.com/api/quotes") else {
+            print("hey does not working url")
+            return
+        }
+        
+        //fetch data from that url
+        
+        do{
+            let (data, _) = try await URLSession.shared.data(from: url)
+            
+            // decode that data
+            
+            if let decodedResponse = try? JSONDecoder().decode([Quote].self, from: data){
+                quotes = decodedResponse
+            }
+        }catch{
+            print("data isnt valid")
+        }
+                
+    }
+
 }
 
 struct QuoteApiView_Previews: PreviewProvider {
