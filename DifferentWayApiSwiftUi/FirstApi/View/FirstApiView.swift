@@ -10,7 +10,21 @@ import SwiftUI
 struct FirstApiView: View {
     @ObservedObject var viewModel = ApiManager()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            List(viewModel.items, id: \.id) {
+                item in
+                VStack(alignment: .leading){
+      
+                    Text(item.title)
+                    Text(item.completed.description)
+                        .font(.system(size: 11))
+                        .foregroundColor(.gray)
+                }
+                
+            }
+        }.onAppear(perform: {
+            viewModel.fetchData()
+        })
     }
 }
 
