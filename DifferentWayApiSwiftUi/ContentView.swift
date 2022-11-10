@@ -26,7 +26,7 @@ struct ContentView: View {
                     })
                 }
                                 HStack{
-                                    Text("Fetch JsonApi - 2")
+                                    Text("https://www.breakingbadapi.com/api/quotes")
                                         .bold()
                                         .foregroundColor(Color.blue)
                                     Spacer()

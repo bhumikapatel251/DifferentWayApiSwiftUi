@@ -29,6 +29,7 @@ struct QuoteApiView: View {
                 }
             }
             .navigationTitle("Quotes")
+            
             .task {
                 await fetchData()
             }
