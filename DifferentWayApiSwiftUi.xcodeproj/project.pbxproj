@@ -14,6 +14,7 @@
 		AC499B56291D1125001EE08B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B55291D1125001EE08B /* DataModel.swift */; };
 		AC499B58291D11A1001EE08B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B57291D11A1001EE08B /* ApiManager.swift */; };
 		AC499B5A291D1267001EE08B /* FirstApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B59291D1267001EE08B /* FirstApiView.swift */; };
+		AC499B5D291D14B0001EE08B /* QuoteApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B5C291D14B0001EE08B /* QuoteApiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		AC499B55291D1125001EE08B /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		AC499B57291D11A1001EE08B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		AC499B59291D1267001EE08B /* FirstApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstApiView.swift; sourceTree = "<group>"; };
+		AC499B5C291D14B0001EE08B /* QuoteApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteApiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 		AC499B42291D0FA3001EE08B /* DifferentWayApiSwiftUi */ = {
 			isa = PBXGroup;
 			children = (
-				AC499B51291D1084001EE08B /* FirstApi */,
+				AC499B5B291D146A001EE08B /* QuoteAsyncApi */,
+				AC499B51291D1084001EE08B /* JsonToDoApi */,
 				AC499B43291D0FA3001EE08B /* DifferentWayApiSwiftUiApp.swift */,
 				AC499B45291D0FA3001EE08B /* ContentView.swift */,
 				AC499B47291D0FA5001EE08B /* Assets.xcassets */,
@@ -74,14 +77,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AC499B51291D1084001EE08B /* FirstApi */ = {
+		AC499B51291D1084001EE08B /* JsonToDoApi */ = {
 			isa = PBXGroup;
 			children = (
 				AC499B54291D10D8001EE08B /* Controller */,
 				AC499B53291D10CA001EE08B /* View */,
 				AC499B52291D10B6001EE08B /* Model */,
 			);
-			path = FirstApi;
+			path = JsonToDoApi;
 			sourceTree = "<group>";
 		};
 		AC499B52291D10B6001EE08B /* Model */ = {
@@ -106,6 +109,14 @@
 				AC499B57291D11A1001EE08B /* ApiManager.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC499B5B291D146A001EE08B /* QuoteAsyncApi */ = {
+			isa = PBXGroup;
+			children = (
+				AC499B5C291D14B0001EE08B /* QuoteApiView.swift */,
+			);
+			path = QuoteAsyncApi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 			files = (
 				AC499B58291D11A1001EE08B /* ApiManager.swift in Sources */,
 				AC499B5A291D1267001EE08B /* FirstApiView.swift in Sources */,
+				AC499B5D291D14B0001EE08B /* QuoteApiView.swift in Sources */,
 				AC499B46291D0FA3001EE08B /* ContentView.swift in Sources */,
 				AC499B44291D0FA3001EE08B /* DifferentWayApiSwiftUiApp.swift in Sources */,
 				AC499B56291D1125001EE08B /* DataModel.swift in Sources */,
