@@ -12,6 +12,7 @@
 		AC499B48291D0FA5001EE08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC499B47291D0FA5001EE08B /* Assets.xcassets */; };
 		AC499B4B291D0FA5001EE08B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC499B4A291D0FA5001EE08B /* Preview Assets.xcassets */; };
 		AC499B56291D1125001EE08B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B55291D1125001EE08B /* DataModel.swift */; };
+		AC499B58291D11A1001EE08B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B57291D11A1001EE08B /* ApiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		AC499B47291D0FA5001EE08B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC499B4A291D0FA5001EE08B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC499B55291D1125001EE08B /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		AC499B57291D11A1001EE08B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		AC499B54291D10D8001EE08B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AC499B57291D11A1001EE08B /* ApiManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC499B58291D11A1001EE08B /* ApiManager.swift in Sources */,
 				AC499B46291D0FA3001EE08B /* ContentView.swift in Sources */,
 				AC499B44291D0FA3001EE08B /* DifferentWayApiSwiftUiApp.swift in Sources */,
 				AC499B56291D1125001EE08B /* DataModel.swift in Sources */,
