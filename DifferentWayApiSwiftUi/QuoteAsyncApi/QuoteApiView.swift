@@ -17,7 +17,22 @@ struct Quote: Codable{
 struct QuoteApiView: View {
     @State private var quotes = [Quote]()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List(quotes, id: \.quote_id){ quote in
+                VStack(alignment: .leading){
+                    Text(quote.author)
+                        .font(.headline)
+                    .foregroundColor(.blue)
+                    Text(quote.quote)
+                        .font(.callout)
+                        .foregroundColor(.gray)
+                }
+            }
+            .navigationTitle("Quotes")
+            .task {
+                await fetchData()
+            }
+        }
     }
 }
 
