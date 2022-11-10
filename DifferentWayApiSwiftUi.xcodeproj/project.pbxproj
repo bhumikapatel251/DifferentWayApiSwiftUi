@@ -13,6 +13,7 @@
 		AC499B4B291D0FA5001EE08B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC499B4A291D0FA5001EE08B /* Preview Assets.xcassets */; };
 		AC499B56291D1125001EE08B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B55291D1125001EE08B /* DataModel.swift */; };
 		AC499B58291D11A1001EE08B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B57291D11A1001EE08B /* ApiManager.swift */; };
+		AC499B5A291D1267001EE08B /* FirstApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B59291D1267001EE08B /* FirstApiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AC499B4A291D0FA5001EE08B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC499B55291D1125001EE08B /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		AC499B57291D11A1001EE08B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		AC499B59291D1267001EE08B /* FirstApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstApiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		AC499B53291D10CA001EE08B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC499B59291D1267001EE08B /* FirstApiView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC499B58291D11A1001EE08B /* ApiManager.swift in Sources */,
+				AC499B5A291D1267001EE08B /* FirstApiView.swift in Sources */,
 				AC499B46291D0FA3001EE08B /* ContentView.swift in Sources */,
 				AC499B44291D0FA3001EE08B /* DifferentWayApiSwiftUiApp.swift in Sources */,
 				AC499B56291D1125001EE08B /* DataModel.swift in Sources */,
