@@ -9,14 +9,40 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+            VStack(alignment: .leading){
+                HStack{
+                    Text("Fetch JsonApi - 1")
+                        .bold()
+                        .foregroundColor(Color.blue)
+                    Spacer()
+                   NavigationLink(destination: ApiView(), label: {
+                       Text("Fetch")
+                           .bold()
+                           .frame(width:100, height:35)
+                           .background(Color.blue)
+                           .foregroundColor(.white)
+                           .cornerRadius(10)
+                   })
+                }
+//                HStack{
+//                    Text("Fetch JsonApi - 2")
+//                        .bold()
+//                        .foregroundColor(Color.blue)
+//                    Spacer()
+//                   NavigationLink(destination: AppiView(), label: {
+//                       Text("Fetch")
+//                           .bold()
+//                           .frame(width:100, height:35)
+//                           .background(Color.blue)
+//                           .foregroundColor(.white)
+//                           .cornerRadius(10)
+//                   })
+//                }
+            }.padding()
+                .navigationTitle("Api Calling")
+                
         }
-        .padding()
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
