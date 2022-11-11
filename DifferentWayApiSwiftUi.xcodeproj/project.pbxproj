@@ -15,6 +15,9 @@
 		AC499B58291D11A1001EE08B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B57291D11A1001EE08B /* ApiManager.swift */; };
 		AC499B5A291D1267001EE08B /* FirstApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B59291D1267001EE08B /* FirstApiView.swift */; };
 		AC499B5D291D14B0001EE08B /* QuoteApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B5C291D14B0001EE08B /* QuoteApiView.swift */; };
+		AC606185291E4B2E008DD5F7 /* URLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC606184291E4B2E008DD5F7 /* URLModel.swift */; };
+		AC606187291E4B60008DD5F7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC606186291E4B60008DD5F7 /* ViewModel.swift */; };
+		AC606189291E4B91008DD5F7 /* CoursesApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC606188291E4B91008DD5F7 /* CoursesApiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		AC499B57291D11A1001EE08B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		AC499B59291D1267001EE08B /* FirstApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstApiView.swift; sourceTree = "<group>"; };
 		AC499B5C291D14B0001EE08B /* QuoteApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteApiView.swift; sourceTree = "<group>"; };
+		AC606184291E4B2E008DD5F7 /* URLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLModel.swift; sourceTree = "<group>"; };
+		AC606186291E4B60008DD5F7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AC606188291E4B91008DD5F7 /* CoursesApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesApiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,9 @@
 		AC606180291E267A008DD5F7 /* CoursesApi */ = {
 			isa = PBXGroup;
 			children = (
+				AC606184291E4B2E008DD5F7 /* URLModel.swift */,
+				AC606186291E4B60008DD5F7 /* ViewModel.swift */,
+				AC606188291E4B91008DD5F7 /* CoursesApiView.swift */,
 			);
 			path = CoursesApi;
 			sourceTree = "<group>";
@@ -199,9 +208,12 @@
 			files = (
 				AC499B58291D11A1001EE08B /* ApiManager.swift in Sources */,
 				AC499B5A291D1267001EE08B /* FirstApiView.swift in Sources */,
+				AC606185291E4B2E008DD5F7 /* URLModel.swift in Sources */,
 				AC499B5D291D14B0001EE08B /* QuoteApiView.swift in Sources */,
 				AC499B46291D0FA3001EE08B /* ContentView.swift in Sources */,
 				AC499B44291D0FA3001EE08B /* DifferentWayApiSwiftUiApp.swift in Sources */,
+				AC606187291E4B60008DD5F7 /* ViewModel.swift in Sources */,
+				AC606189291E4B91008DD5F7 /* CoursesApiView.swift in Sources */,
 				AC499B56291D1125001EE08B /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

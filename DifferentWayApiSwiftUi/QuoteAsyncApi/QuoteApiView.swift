@@ -17,23 +17,32 @@ struct Quote: Codable{
 struct QuoteApiView: View {
     @State private var quotes = [Quote]()
     var body: some View {
-        NavigationView{
-            List(quotes, id: \.quote_id){ quote in
-                VStack(alignment: .leading){
-                    Text(quote.author)
-                        .font(.headline)
-                    .foregroundColor(.blue)
-                    Text(quote.quote)
-                        .font(.callout)
-                        .foregroundColor(.gray)
+        VStack(alignment: .leading){
+            Text("Conent-Type: application/json; charset=utf-8")
+            Text("URL: https://www.breakingbadapi.com/api/quotes")
+           
+                Text("Req:")
+                  
+                Text("Res:")
+            NavigationView{
+                List(quotes, id: \.quote_id){ quote in
+                    VStack(alignment: .leading){
+                        Text(quote.author)
+                            .font(.headline)
+                            .foregroundColor(.blue)
+                        Text(quote.quote)
+                            .font(.callout)
+                            .foregroundColor(.gray)
+                    }
+                }
+                .navigationTitle("Quotes")
+                
+                .task {
+                    await fetchData()
                 }
             }
-            .navigationTitle("Quotes")
-            
-            .task {
-                await fetchData()
-            }
         }
+        .padding(10)
     }
     func fetchData() async{
         // create url
