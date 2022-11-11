@@ -28,23 +28,40 @@ struct ContentView: View {
                 }
                 .padding(.leading,50)
                 Divider()
-                                VStack{
-                                    Text("ContentType - application/json; charset=utf-8")
-                                        .bold()
-                                        .foregroundColor(Color.blue)
+                VStack{
+                    Text("ContentType - application/json; charset=utf-8")
+                        .bold()
+                        .foregroundColor(Color.blue)
                                    
-                                   NavigationLink(destination: QuoteApiView(), label: {
-                                       Text("QuoteApi")
-                                           .bold()
-                                           .frame(width:100, height:35)
-                                           .background(Color.blue)
-                                           .foregroundColor(.white)
-                                           .cornerRadius(10)
-                                   })
-                                }
-                                .padding(.leading,50)
+                    NavigationLink(destination: QuoteApiView(), label: {
+                        Text("QuoteApi")
+                            .bold()
+                            .frame(width:100, height:35)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                        })
+                }
+                .padding(.leading,50)
+                Divider()
+                VStack{
+                    Text("ContentType - text/html; charset=UTF-8")
+                        .bold()
+                        .foregroundColor(Color.blue)
+                                   
+                    NavigationLink(destination: CoursesApiView(), label: {
+                        Text("CoursesApi")
+                            .bold()
+                            .frame(width:100, height:35)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                        })
+                }
+                .padding(.leading)
                }.padding()
                 .navigationTitle("Api Calling")
+                .navigationBarBackButtonHidden(true)
             }
         }
 }
