@@ -11,27 +11,30 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack(alignment: .leading){
-                HStack{
-                    Text("https://jsonplaceholder.typicode.com/todos")
+                VStack{
+                    Text("ContentType - application/json; charset=utf-8")
                         .bold()
                         .foregroundColor(Color.blue)
-                    Spacer()
+                    
                     NavigationLink(destination: FirstApiView(), label: {
-                        Text("Fetch")
+                        Text("JsonApi")
                             .bold()
                             .frame(width:100, height:35)
                             .background(Color.blue)
                             .foregroundColor(.white)
                             .cornerRadius(10)
+                            
                     })
                 }
-                                HStack{
-                                    Text("https://www.breakingbadapi.com/api/quotes")
+                .padding(.leading,50)
+                Divider()
+                                VStack{
+                                    Text("ContentType - application/json; charset=utf-8")
                                         .bold()
                                         .foregroundColor(Color.blue)
-                                    Spacer()
+                                   
                                    NavigationLink(destination: QuoteApiView(), label: {
-                                       Text("Fetch")
+                                       Text("QuoteApi")
                                            .bold()
                                            .frame(width:100, height:35)
                                            .background(Color.blue)
@@ -39,6 +42,7 @@ struct ContentView: View {
                                            .cornerRadius(10)
                                    })
                                 }
+                                .padding(.leading,50)
                }.padding()
                 .navigationTitle("Api Calling")
             }

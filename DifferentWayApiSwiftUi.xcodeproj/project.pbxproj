@@ -59,6 +59,7 @@
 		AC499B42291D0FA3001EE08B /* DifferentWayApiSwiftUi */ = {
 			isa = PBXGroup;
 			children = (
+				AC606180291E267A008DD5F7 /* CoursesApi */,
 				AC499B5B291D146A001EE08B /* QuoteAsyncApi */,
 				AC499B51291D1084001EE08B /* JsonToDoApi */,
 				AC499B43291D0FA3001EE08B /* DifferentWayApiSwiftUiApp.swift */,
@@ -117,6 +118,13 @@
 				AC499B5C291D14B0001EE08B /* QuoteApiView.swift */,
 			);
 			path = QuoteAsyncApi;
+			sourceTree = "<group>";
+		};
+		AC606180291E267A008DD5F7 /* CoursesApi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoursesApi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
