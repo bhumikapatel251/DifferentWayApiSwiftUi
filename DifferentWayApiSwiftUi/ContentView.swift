@@ -28,6 +28,7 @@ struct ContentView: View {
                 }
                 .padding(.leading,50)
                 Divider()
+                    .frame(width: 350,height: 3).background(Color.gray)
                 VStack{
                     Text("ContentType - application/json; charset=utf-8")
                         .bold()
@@ -44,6 +45,7 @@ struct ContentView: View {
                 }
                 .padding(.leading,50)
                 Divider()
+                    .frame(width: 350,height: 3).background(Color.gray)
                 VStack{
                     Text("ContentType - text/html; charset=UTF-8")
                         .bold()
