@@ -10,7 +10,20 @@ import SwiftUI
 struct RequireUserApiView: View {
     @StateObject var createDataVM  = DataViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List{
+                ForEach(createDataVM.createData, id: \.self, content:{ create in
+                    Text(create.first_name)
+                    Text(create.email)
+                    
+                })
+                .listStyle(.plain)
+                .navigationTitle("DATA")
+            }
+            .task {
+                await createDataVM.fetchData()
+            }
+        }
     }
 }
 
