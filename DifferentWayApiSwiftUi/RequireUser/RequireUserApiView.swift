@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct RequireUserApiView: View {
-    @StateObject var createDataVM  = DataViewModel()
+    @StateObject var createDataVM  = DataPageViewModel()
     var body: some View {
         NavigationView{
             List{
                 ForEach(createDataVM.createData, id: \.self, content:{ create in
-                    Text(create.first_name)
-                    Text(create.email)
-                    
+                    HStack{
+                        Text(create.first_name)
+                        Spacer()
+                        Text(create.email)
+                    }
                 })
                 .listStyle(.plain)
                 .navigationTitle("DATA")
