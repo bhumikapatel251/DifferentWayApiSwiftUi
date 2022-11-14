@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-            VStack(alignment: .leading){
+            VStack(alignment: .center){
                 VStack{
                     Text("ContentType - application/json; charset=utf-8")
                         .bold()
@@ -26,7 +26,7 @@ struct ContentView: View {
                             
                     })
                 }
-                .padding(.leading,50)
+                //.padding(.leading,50)
                 Divider()
                     .frame(width: 350,height: 3).background(Color.gray)
                 VStack{
@@ -43,7 +43,7 @@ struct ContentView: View {
                             .cornerRadius(10)
                         })
                 }
-                .padding(.leading,50)
+                //.padding(.leading,50)
                 Divider()
                     .frame(width: 350,height: 3).background(Color.gray)
                 VStack{
@@ -60,7 +60,24 @@ struct ContentView: View {
                             .cornerRadius(10)
                         })
                 }
-                .padding(.leading)
+               // .padding(.leading,50)
+                Divider()
+                    .frame(width: 350,height: 3).background(Color.gray)
+                VStack{
+                    Text("ContentType - application/json;charset=utf-8")
+                        .bold()
+                        .foregroundColor(Color.blue)
+                                   
+                    NavigationLink(destination: RequireUserApiView(), label: {
+                        Text("RequireUserApi")
+                            .bold()
+                            .frame(width:140, height:35)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                        })
+                }
+                //.padding(.leading,50)
                }.padding()
                 .navigationTitle("Api Calling")
                 .navigationBarBackButtonHidden(true)
