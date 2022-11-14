@@ -15,12 +15,12 @@
 		AC499B58291D11A1001EE08B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B57291D11A1001EE08B /* ApiManager.swift */; };
 		AC499B5A291D1267001EE08B /* FirstApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B59291D1267001EE08B /* FirstApiView.swift */; };
 		AC499B5D291D14B0001EE08B /* QuoteApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC499B5C291D14B0001EE08B /* QuoteApiView.swift */; };
-		AC4C2F53291FBBB3003765D2 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C2F52291FBBB3003765D2 /* DataModel.swift */; };
-		AC4C2F55291FBBCB003765D2 /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C2F54291FBBCB003765D2 /* DataViewModel.swift */; };
 		AC4C2F57291FBBF5003765D2 /* RequireUserApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C2F56291FBBF5003765D2 /* RequireUserApiView.swift */; };
 		AC606185291E4B2E008DD5F7 /* URLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC606184291E4B2E008DD5F7 /* URLModel.swift */; };
 		AC606187291E4B60008DD5F7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC606186291E4B60008DD5F7 /* ViewModel.swift */; };
 		AC606189291E4B91008DD5F7 /* CoursesApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC606188291E4B91008DD5F7 /* CoursesApiView.swift */; };
+		ACCD425B2922118100F3404F /* DataPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD425A2922118100F3404F /* DataPageViewModel.swift */; };
+		ACCD425D292211A500F3404F /* DataPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD425C292211A500F3404F /* DataPageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,12 +33,12 @@
 		AC499B57291D11A1001EE08B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		AC499B59291D1267001EE08B /* FirstApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstApiView.swift; sourceTree = "<group>"; };
 		AC499B5C291D14B0001EE08B /* QuoteApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteApiView.swift; sourceTree = "<group>"; };
-		AC4C2F52291FBBB3003765D2 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		AC4C2F54291FBBCB003765D2 /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
 		AC4C2F56291FBBF5003765D2 /* RequireUserApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequireUserApiView.swift; sourceTree = "<group>"; };
 		AC606184291E4B2E008DD5F7 /* URLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLModel.swift; sourceTree = "<group>"; };
 		AC606186291E4B60008DD5F7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AC606188291E4B91008DD5F7 /* CoursesApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesApiView.swift; sourceTree = "<group>"; };
+		ACCD425A2922118100F3404F /* DataPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPageViewModel.swift; sourceTree = "<group>"; };
+		ACCD425C292211A500F3404F /* DataPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,9 +136,9 @@
 		AC4C2F51291FBB54003765D2 /* RequireUser */ = {
 			isa = PBXGroup;
 			children = (
-				AC4C2F52291FBBB3003765D2 /* DataModel.swift */,
-				AC4C2F54291FBBCB003765D2 /* DataViewModel.swift */,
 				AC4C2F56291FBBF5003765D2 /* RequireUserApiView.swift */,
+				ACCD425A2922118100F3404F /* DataPageViewModel.swift */,
+				ACCD425C292211A500F3404F /* DataPageModel.swift */,
 			);
 			path = RequireUser;
 			sourceTree = "<group>";
@@ -225,15 +225,15 @@
 			files = (
 				AC4C2F57291FBBF5003765D2 /* RequireUserApiView.swift in Sources */,
 				AC499B58291D11A1001EE08B /* ApiManager.swift in Sources */,
+				ACCD425B2922118100F3404F /* DataPageViewModel.swift in Sources */,
 				AC499B5A291D1267001EE08B /* FirstApiView.swift in Sources */,
 				AC606185291E4B2E008DD5F7 /* URLModel.swift in Sources */,
 				AC499B5D291D14B0001EE08B /* QuoteApiView.swift in Sources */,
 				AC499B46291D0FA3001EE08B /* ContentView.swift in Sources */,
-				AC4C2F53291FBBB3003765D2 /* DataModel.swift in Sources */,
 				AC499B44291D0FA3001EE08B /* DifferentWayApiSwiftUiApp.swift in Sources */,
 				AC606187291E4B60008DD5F7 /* ViewModel.swift in Sources */,
 				AC606189291E4B91008DD5F7 /* CoursesApiView.swift in Sources */,
-				AC4C2F55291FBBCB003765D2 /* DataViewModel.swift in Sources */,
+				ACCD425D292211A500F3404F /* DataPageModel.swift in Sources */,
 				AC499B56291D1125001EE08B /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
